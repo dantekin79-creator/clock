@@ -1,7 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -11,22 +20,20 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #ffffff;
 }
 
-.clock h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.date {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.time {
-  font-size: 4em;
-  font-weight: bold;
+.clock p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 3px solid #00d2ff;
+  text-align: center;
 }
