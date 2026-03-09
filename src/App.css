@@ -1,21 +1,37 @@
-.App {
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 40px;
-  background-color: #f0f8ff; /* AliceBlue - colorful */
-  border: 5px solid #646cff; /* RoyalBlue - colorful */
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  color: #ff4500; /* OrangeRed - colorful */
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.clock h1 {
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
-p {
-  color: #2e8b57; /* SeaGreen - colorful */
-  font-size: 2.5rem;
+.date {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.time {
+  font-size: 4em;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  color: #ffeb3b; /* Additional color beyond B&W */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
