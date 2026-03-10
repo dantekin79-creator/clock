@@ -19,6 +19,8 @@ function App() {
   return (
     <div className="clock">
       <h1>Dynamic Clock</h1>
+      {/* Display formatted current date and time together for the lab requirement */}
+      <p>{format(time, 'PPpp')}</p>
       {/* Display the formatted current date and time in separate p tags */}
       <p className="date">{format(time, 'EEEE, MMMM do, yyyy')}</p>
       <p className="time">{format(time, 'HH:mm:ss')}</p>
